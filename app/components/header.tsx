@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaChartLine, FaBuilding, FaNewspaper, FaUsers } from "react-icons/fa";
 import Image from "next/image";
 // Animation variants for the mobile menu
 const listVariant = {
@@ -124,19 +123,16 @@ export default function Header() {
       title: "Solutions",
       children: [
         {
-          path: "/solutions/analytics",
-          title: "Analytics",
-          icon: <FaChartLine size={20} />,
+          path: "/solutions/crm",
+          title: "CRM",
         },
         {
-          path: "/solutions/automation",
-          title: "Automation",
-          icon: <FaChartLine size={20} />,
+          path: "/solutions/ai-engine",
+          title: "AI engine",
         },
         {
-          path: "/solutions/integrations",
-          title: "Integrations",
-          icon: <FaChartLine size={20} />,
+          path: "/solutions/services",
+          title: "Services",
         },
       ],
     },
@@ -152,19 +148,16 @@ export default function Header() {
       title: "Company",
       children: [
         {
-          path: "/about",
-          title: "About Us",
-          icon: <FaBuilding size={20} />,
+          path: "/company/story",
+          title: "Story",
         },
         {
-          path: "/careers",
+          path: "/company/careers",
           title: "Careers",
-          icon: <FaUsers size={20} />,
         },
         {
-          path: "/blog",
-          title: "Blog",
-          icon: <FaNewspaper size={20} />,
+          path: "/company/customers",
+          title: "Customers",
         },
       ],
     },
@@ -173,16 +166,24 @@ export default function Header() {
   return (
     <header className="sticky mt-4 top-4 z-50 px-2 md:px-4 md:flex justify-center">
       {/* Main navigation bar */}
-      <nav className="border border-border px-4 flex items-center backdrop-filter backdrop-blur-xl bg-[#FFFFFF] dark:bg-[#121212] bg-opacity-70 h-[50px] z-20 relative">
+      <nav className="flex justify-between border border-border px-4 md:flex items-center backdrop-filter backdrop-blur-xl bg-[#FFFFFF] dark:bg-[#121212] bg-opacity-70 h-[50px] z-20 relative">
         {/* Logo */}
         <ContextMenu>
           <ContextMenuTrigger>
             <Link href="/">
               <Image
+                src="/mobile-logo.svg"
+                alt="PropData Logo"
+                width={121}
+                height={18}
+                className="h-[18px] w-[121px] md:hidden"
+              />
+              <Image
                 src="/logo.svg"
                 alt="PropData Logo"
                 width={30}
                 height={30}
+                className="hidden md:block"
               />
             </Link>
           </ContextMenuTrigger>
@@ -304,7 +305,6 @@ export default function Header() {
                               href={child.path}
                               className="flex space-x-2 items-center transition-opacity hover:opacity-70 duration-200"
                             >
-                              <span>{child.icon}</span>
                               <span className="text-sm font-medium">
                                 {child.title}
                               </span>
@@ -322,7 +322,7 @@ export default function Header() {
         </ul>
 
         {/* Sign Up Button */}
-        <div className="ml-auto flex items-center">
+        <div className="hidden ml-auto md:flex items-center">
           <div className="h-6 w-px bg-border mx-4" />
           <Link
             href="/signup"
@@ -361,8 +361,8 @@ export default function Header() {
         >
           <div className="mt-4 flex justify-between p-3 px-4 relative ml-[1px]">
             <button type="button" onClick={handleToggleMenu}>
-              <span className="sr-only">PropData Logo</span>
-              <div className="text-xl font-bold">PropData</div>
+              <span className="sr-only"></span>
+              <br />
             </button>
 
             <button
@@ -417,7 +417,9 @@ export default function Header() {
                     <Accordion collapsible type="single">
                       <AccordionItem value="item-1" className="border-none">
                         <AccordionTrigger className="flex items-center justify-between w-full font-normal p-0 hover:no-underline">
-                          <span className="text-[#878787]">{title}</span>
+                          <span className="text-[#878787] text-xl">
+                            {title}
+                          </span>
                         </AccordionTrigger>
 
                         {children && (
@@ -431,7 +433,9 @@ export default function Header() {
                                       href={child.path}
                                       className="text-[#878787]"
                                     >
-                                      {child.title}
+                                      <span className="text-sm font-medium">
+                                        {child.title}
+                                      </span>
                                     </Link>
                                   </li>
                                 );
