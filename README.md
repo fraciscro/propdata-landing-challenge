@@ -1,24 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PropData - AI-Powered Solutions for Real Estate Experts
+
+PropData is a modern, AI-powered platform designed to transform the real estate industry through data-driven insights and intelligent automation. Built with Next.js and shadcn/ui, it provides a seamless experience for real estate professionals to access comprehensive property data, market analytics, and investment opportunities.
+
+## Features
+
+- **AI-Powered CRM**: Streamline your real estate operations with intelligent automation
+- **Market Analysis Engine**: Get actionable insights from real-time market data
+- **Comprehensive Services**: Scale your business with our suite of professional tools
+- **Modern UI/UX**: Clean, responsive design with dark mode support
+- **Real-time Updates**: Stay informed with the latest market trends and data
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com)
+- **Theme**: Dark mode by default with neutral color palette
+- **Animations**: Built-in transitions and hover effects
+- **Responsive Design**: Mobile-first approach with desktop optimizations
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   ```bash
+   git clone https://github.com/yourusername/propdata.git
+   cd propdata
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+propdata/
+├── app/
+│   ├── components/     # Reusable UI components
+│   ├── page.tsx        # Main landing page
+│   ├── layout.tsx      # Root layout
+│   └── globals.css     # Global styles
+├── public/            # Static assets
+└── components/        # UI components
+    └── ui/            # shadcn/ui components
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Navigation Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application features a responsive navigation system with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Desktop View**:
+
+  - Dropdown menus for Solutions and Company sections
+  - Clean hover effects with immediate content display
+  - Vertical separator for visual hierarchy
+  - Consistent button styling
+
+- **Mobile View**:
+  - Hamburger menu with slide-in animation
+  - Accordion-style navigation for Solutions and Company
+  - Clean, minimal design
+  - Optimized touch targets
+
+## Theme Configuration
+
+The project uses a dark theme by default with the following characteristics:
+
+- **Color Palette**: Neutral tones with primary accents
+- **Typography**: Clean, readable fonts with proper hierarchy
+- **Components**: Consistent styling across all UI elements
+- **Animations**: Smooth transitions and hover effects
+
+## Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries, please reach out to [your-email@example.com](mailto:your-email@example.com)
 
 ## Learn More
 
