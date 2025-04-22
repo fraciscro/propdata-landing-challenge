@@ -95,6 +95,28 @@ export default function Header() {
     },
   ];
 
+  // Company cards data
+  const companyCards = [
+    {
+      title: "Story",
+      description: "Meet the team",
+      backgroundImage: "/rectangle-65.png",
+      path: "/company/story",
+    },
+    {
+      title: "Careers",
+      description: "Join us",
+      backgroundImage: "/rectangle-66.png",
+      path: "/company/careers",
+    },
+    {
+      title: "Customers",
+      description: "Meet the experts",
+      backgroundImage: "/rectangle-67.png",
+      path: "/company/customers",
+    },
+  ];
+
   // Navigation links configuration
   // Each item can have a direct path or children for dropdowns
   const links = [
@@ -210,6 +232,41 @@ export default function Header() {
                           href={card.path}
                           className={`relative flex-1 h-full ${
                             index < serviceCards.length - 1
+                              ? "border-r border-medium-gray"
+                              : ""
+                          }`}
+                          style={{
+                            backgroundImage: `url(${card.backgroundImage})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <div className="absolute bottom-4 left-4 flex flex-col items-start">
+                            <div className="font-medium text-[#ffffff] text-sm tracking-[-0.42px] leading-[14.7px]">
+                              {card.title}
+                            </div>
+                            <div className="font-normal text-[#878787] text-xs tracking-[-0.36px] leading-[18px]">
+                              {card.description}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : children && title === "Company" ? (
+                  <div
+                    className={cn(
+                      "absolute top-[48px] left-0 right-0 bg-[#121212] flex h-0 group-hover:h-[180px] overflow-hidden transition-all duration-300 ease-in-out border-l border-r border-medium-gray",
+                      hidden && "hidden"
+                    )}
+                  >
+                    <div className="flex w-full h-[180px]">
+                      {companyCards.map((card, index) => (
+                        <Link
+                          key={index}
+                          href={card.path}
+                          className={`relative flex-1 h-full ${
+                            index < companyCards.length - 1
                               ? "border-r border-medium-gray"
                               : ""
                           }`}
