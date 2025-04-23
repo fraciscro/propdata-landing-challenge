@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -45,7 +46,7 @@ export default function Hero() {
                       {/* Product update badge */}
                       <Button
                         variant="outline"
-                        className="w-fit h-9 px-4 py-2 rounded-none border border-solid border-white bg-transparent hover:bg-white/10 flex items-center gap-2"
+                        className="w-fit h-9 px-4 py-2 rounded-none border border-solid border-white bg-transparent hover:bg-white/10 flex items-center gap-2 cursor-pointer"
                       >
                         <span className="font-normal text-white text-xs tracking-[-0.36px] leading-3 whitespace-nowrap [font-family:'Geist_Mono-Regular',Helvetica]">
                           August Product Updates
@@ -65,16 +66,18 @@ export default function Hero() {
 
                       {/* CTA buttons */}
                       <div className="flex items-center gap-4 mt-6">
-                        <Button
-                          variant="outline"
-                          className="h-12 px-6 py-2 rounded-none border border-solid border-white bg-transparent hover:bg-white/10"
-                        >
-                          <span className="[font-family:'Geist-Medium',Helvetica] font-medium text-white text-sm text-center tracking-[-0.42px] leading-[14.7px]">
-                            Contact us
-                          </span>
-                        </Button>
+                        <Link href="/contactus">
+                          <Button
+                            variant="outline"
+                            className="h-12 px-6 py-2 rounded-none border border-solid border-white bg-transparent hover:bg-white/10 cursor-pointer"
+                          >
+                            <span className="[font-family:'Geist-Medium',Helvetica] font-medium text-white text-sm text-center tracking-[-0.42px] leading-[14.7px]">
+                              Contact us
+                            </span>
+                          </Button>
+                        </Link>
 
-                        <Button className="h-12 px-6 py-2 rounded-none bg-white border border-solid border-white hover:bg-white/90">
+                        <Button className="h-12 px-6 py-2 rounded-none bg-white border border-solid border-white hover:bg-white/90 cursor-pointer">
                           <span className="[font-family:'Geist-Medium',Helvetica] font-medium text-black text-sm text-center tracking-[-0.42px] leading-[14.7px]">
                             Get Started
                           </span>

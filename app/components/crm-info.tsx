@@ -35,13 +35,13 @@ const CRMInfo = ({
       </div>
 
       {/* Image */}
-      <div className="w-full max-w-[1200px] relative mb-12">
+      <div className="relative mb-12">
         <Image
           src={imageSrc}
           alt={title}
           width={imageWidth}
           height={imageHeight}
-          className="w-full h-auto"
+          className=""
           priority
         />
       </div>

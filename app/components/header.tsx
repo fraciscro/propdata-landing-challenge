@@ -321,7 +321,7 @@ export default function Header() {
           })}
         </ul>
 
-        {/* Sign Up Button */}
+        {/* Sign Up Button (Desktop) */}
         <div className="hidden ml-auto md:flex items-center">
           <div className="h-6 w-px bg-border mx-4" />
           <Link

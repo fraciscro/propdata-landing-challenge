@@ -76,6 +76,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Custom badge colors */
+  --badge-success: #c8e3b1;
+  --badge-info: #8daac9;
+  --badge-error: #cb717a;
+  --badge-warning: #f3daa7;
 }
 
 .dark {
