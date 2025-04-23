@@ -3,7 +3,7 @@ import Hero from "./hero";
 import Dashboard from "./dashboard";
 import FooterCTA from "./footer-cta";
 import Bento from "./bento";
-import Card from "./card";
+import CardSection from "./card-section";
 import Footer from "./footer";
 
 const StartPage = () => {
@@ -12,7 +12,7 @@ const StartPage = () => {
       <Hero />
       <Dashboard />
       <Bento />
-      <Card />
+      <CardSection />
       <FooterCTA />
       <Footer />
     </>
