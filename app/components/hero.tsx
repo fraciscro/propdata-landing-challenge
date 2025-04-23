@@ -17,24 +17,28 @@ export default function Hero() {
             {/* Background Images */}
             <div className="absolute inset-0">
               {/* Main background ellipse */}
-              <img
-                className="w-full h-full object-cover"
-                alt="Hero Background"
+              <Image
                 src="/hero-ellipse.png"
+                alt="Hero Background"
+                fill
+                className="object-cover"
+                priority
               />
               {/* Logo overlay for mobile */}
-              <div className="md:hidden absolute inset-0 flex items-center justify-center">
-                <img
-                  src="/hero-section-logo.png"
-                  alt="PropData Logo"
-                  className="w-[250px] h-[250px] mix-blend-lighten"
+              <div className="mt-30 md:hidden absolute inset-0 flex items-center justify-center">
+                <video
+                  src="/hero-video.mp4"
+                  autoPlay
+                  muted
+                  playsInline
+                  className="w-[500px] h-[500px] mix-blend-lighten"
                 />
               </div>
             </div>
 
             {/* Content overlay */}
             <div className="absolute inset-0 flex items-center">
-              <div className="container mx-auto px-4 mt-100 md:mt-0">
+              <div className="container mx-auto px-4 mt-150 md:mt-0">
                 <div className="relative flex flex-col md:flex-row items-center justify-between">
                   <section className="relative w-full max-w-[612px] ml-0 md:ml-[10%] z-10">
                     <div className="flex flex-col gap-6">
@@ -95,12 +99,12 @@ export default function Hero() {
 
                   {/* Hero Logo - Desktop Only */}
                   <div className="hidden md:block w-[400px] h-[400px] relative">
-                    <Image
-                      src="/hero-section-logo.png"
-                      alt="PropData Logo"
-                      width={400}
-                      height={400}
-                      className="mix-blend-lighten"
+                    <video
+                      src="/hero-video.mp4"
+                      autoPlay
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover mix-blend-lighten"
                     />
                   </div>
                 </div>

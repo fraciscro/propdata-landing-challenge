@@ -38,7 +38,7 @@ const Bento = () => {
           <Card className="bg-neutral-900 border-medium-gray rounded-none p-5 flex flex-col">
             <div className="relative w-full h-48 mb-4">
               <Image
-                src="/prospections.png"
+                src="/bento-01.png"
                 alt="Prospections"
                 fill
                 className="object-cover"
@@ -53,8 +53,8 @@ const Bento = () => {
           </Card>
 
           {/* First Row - Second & Third Column */}
-          <Card className="bg-neutral-900 border-medium-gray rounded-none p-5 md:col-span-2 flex flex-col md:flex-row md:items-center md:justify-between">
-            <div className="md:max-w-[50%]">
+          <Card className="bg-neutral-900 border-medium-gray rounded-none p-5 md:col-span-2 flex flex-col md:flex-row md:items-start md:h-[400px]">
+            <div className="md:max-w-[50%] md:pt-4">
               <h3 className="text-white text-2xl font-medium tracking-[-0.72px] leading-[30px] [font-family:'Geist-Medium',Helvetica] mb-2">
                 Lead Generation
               </h3>
@@ -64,9 +64,9 @@ const Bento = () => {
                 productive.
               </p>
             </div>
-            <div className="relative w-full md:w-[45%] h-48 mt-4 md:mt-0">
+            <div className="relative w-full md:w-[45%] h-48 md:h-full mt-4 md:mt-0">
               <Image
-                src="/lead-generation.png"
+                src="/bento-02.png"
                 alt="Lead Generation"
                 fill
                 className="object-cover"
@@ -75,16 +75,16 @@ const Bento = () => {
           </Card>
 
           {/* Second Row - First & Second Column */}
-          <Card className="bg-neutral-900 border-medium-gray rounded-none p-5 md:col-span-2 flex flex-col md:flex-row md:items-center md:justify-between">
-            <div className="relative w-full md:w-[45%] h-48 mb-4 md:mb-0">
+          <Card className="bg-neutral-900 border-medium-gray rounded-none p-5 md:col-span-2 flex flex-col md:flex-row md:items-end md:h-[400px]">
+            <div className="relative w-full md:w-[45%] h-48 md:h-full mb-4 md:mb-0">
               <Image
-                src="/valuation.png"
+                src="/bento-03.png"
                 alt="Automated Valuation Model"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="md:max-w-[50%]">
+            <div className="md:max-w-[50%] md:pb-4">
               <h3 className="text-white text-2xl font-medium tracking-[-0.72px] leading-[30px] [font-family:'Geist-Medium',Helvetica] mb-2">
                 Automated Valuation Model
               </h3>
@@ -110,7 +110,7 @@ const Bento = () => {
             </div>
             <div className="relative w-full h-48 mt-auto">
               <Image
-                src="/insights.png"
+                src="/bento-04.png"
                 alt="Insights"
                 fill
                 className="object-cover"
