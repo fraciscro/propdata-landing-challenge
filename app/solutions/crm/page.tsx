@@ -1,8 +1,21 @@
+import React from "react";
+import StartSymbol from "@/app/components/start-symbol";
+import CRMInfo from "@/app/components/crm-info";
+
 export default function CRMPage() {
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-4xl font-bold mb-4">CRM</h1>
-      <p className="text-lg text-muted-foreground">AI-Powered platform</p>
-    </div>
+    <main className="min-h-screen bg-[#121212] py-20 -mt-16">
+      <div className="mt-15">
+        <CRMInfo
+          label="Propdata CRM"
+          title={"Everything platform\nfor your real estate\nbusiness."}
+          description="An AI-powered CRM specifically designed to manage all the real estate operations your business needs, including asset management, property advertising, organizational structure, and much more."
+          imageSrc="/dashboard-hd.png"
+          imageWidth={1200}
+          imageHeight={675}
+        />
+      </div>
+      <StartSymbol />
+    </main>
   );
 }
