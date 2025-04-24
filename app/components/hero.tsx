@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className="relative w-full h-screen overflow-hidden -mt-[82px]">
       {/* Dark overlay for mobile - moved outside the Card */}
-      <div className="md:hidden absolute inset-0 bg-black/30 z-[1]" />
+      <div className="xl:hidden absolute inset-0 bg-black/30 z-[1]" />
 
       <Card className="w-full h-full border-0">
         <CardContent className="p-0 h-full">
@@ -32,14 +32,14 @@ export default function Hero() {
                   autoPlay
                   muted
                   playsInline
-                  className="w-[500px] h-[500px] mix-blend-lighten"
+                  className="w-[800px] h-[800px] mix-blend-lighten"
                 />
               </div>
             </div>
 
             {/* Content overlay */}
             <div className="absolute inset-0 flex items-center">
-              <div className="container mx-auto px-4 mt-150 md:mt-0">
+              <div className="container mx-auto px-4 mt-150 md:mt-50 xl:mt-0">
                 <div className="relative flex flex-col md:flex-row items-center justify-between">
                   <section className="relative w-full max-w-[612px] ml-0 md:ml-[10%] z-10">
                     <div className="flex flex-col gap-6">
@@ -101,7 +101,7 @@ export default function Hero() {
                   </section>
 
                   {/* Hero Logo - Desktop Only */}
-                  <div className="hidden md:block w-[400px] h-[400px] relative">
+                  <div className="hidden xl:block w-[600px] h-[600px] relative">
                     <video
                       src="/hero-video.mp4"
                       autoPlay
