@@ -10,7 +10,7 @@ const Bento = () => {
         {/* Title and Description */}
         <div className="flex flex-col items-center text-center mb-20">
           {/* Title with inline image */}
-          <h2 className="flex items-center gap-3 text-4xl md:text-5xl font-medium text-white tracking-[-1.44px] leading-[48px] [font-family:'Geist-Medium',Helvetica] mb-4">
+          <h2 className="flex items-center gap-3 text-2xl sm:text-3xl md:text-5xl font-medium text-white tracking-[-1.44px] leading-[48px] [font-family:'Geist-Medium',Helvetica] mb-4">
             Powered by
             <span className="inline-flex items-center gap-3">
               an
@@ -27,7 +27,7 @@ const Bento = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-[#616161] tracking-[-0.60px] leading-[30px] [font-family:'Geist-Regular',Helvetica]">
+          <p className="text-md md:text-xl text-[#616161] tracking-[-0.60px] leading-[30px] [font-family:'Geist-Regular',Helvetica]">
             We&apos;re creating the future of real estate management.
           </p>
         </div>

@@ -9,12 +9,12 @@ const CardSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-start justify-center gap-8 md:gap-16">
           {/* Fixed Image Section */}
-          <div className="w-[300px] h-[600px] md:w-[300px] md:h-[500px] relative ml-19 md:sticky md:ml-0">
+          <div className="w-[300px] h-[600px] md:w-[300px] md:h-[500px] relative ml-10 sm:ml-19 md:sticky md:ml-0">
             <Image
               src="/single-card.png"
               alt="Card"
               fill
-              className="object-cover"
+              className="object-cover mix-blend-lighten"
               priority
             />
           </div>
